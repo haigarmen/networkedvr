@@ -112,7 +112,7 @@ sky).
 ### Point
 
 Point lights, unlike directional lights, are omni-directional and affect
-materials depending on their position and distance. Point likes are like light
+materials depending on their position and distance. Point lights are like light
 bulb. The closer the light bulb gets to an object, the greater the object is
 lit.
 
@@ -235,8 +235,6 @@ system on the `<a-scene>` root element.
 </a-scene>
 ```
 
-| Property           | Description                                                                                                                                                                                                                                                                                      | Default Value |
-|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
-| type               | Defines shadow map type (`basic`, `pcf`, `pcfsoft`) with varying appearance and perforance characteristics.                                                                                                                                                                                     | `pcf`         |
-| renderReverseSided | Whether to render the opposite side as specified by the material into the shadow map. When disabled, an appropriate shadow.bias must be set on the light source for surfaces that can both cast and receive shadows at the same time to render correctly.                                        | true          |
-| renderSingleSided  | Whether to treat materials specified as double-sided as if they were specified as front-sided when rendering the shadow map. When disabled, an appropriate shadow.bias must be set on the light source for surfaces that can both cast and receive shadows at the same time to render correctly. | true          |
+| Property           | Description                                                                                                   | Default Value |
+|--------------------|---------------------------------------------------------------------------------------------------------------|---------------|
+| type               | Defines shadow map type (`basic`, `pcf`, `pcfsoft`) with varying appearance and performance characteristics.   | `pcf`         |
